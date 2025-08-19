@@ -1,0 +1,169 @@
+﻿body {
+    margin: 0;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    background-color: grey;
+}
+
+h2 {
+    text-align: center;
+}
+
+header a {
+    color: white;
+}
+
+header {
+    color: white;
+}
+
+.playlist_cover {
+    width: 60px;
+    height: 60px;
+}
+
+.edge {
+    /* box-sizing: //border-box; */
+    /* border: solid blueviolet; */
+    /* background-color: green; */
+    width: 100%;
+    padding: 2%;
+}
+
+.edge h1 {
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+}
+
+.edge nav ul {
+    padding: 0%;
+    display: flex;
+}
+
+.edge nav li {
+    /* margin-right: 75px; */
+    /*border: solid blue;*/
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.side-bar-left, .side-bar-right, .content {
+    /* height: 68.45%; */
+    position: fixed;
+    height: 75%;
+    /* background-color: #f2f2f2; */
+    /* background-color: white; */
+}
+
+.side-bar-left, .side-bar-right {
+    width: 15%;
+    background-color: lightgray;
+    /*border: solid blue;*/
+    /*box-sizing: border-box;*/
+    display: inline-block;
+    overflow: scroll;
+}
+
+.side-bar-left::-webkit-scrollbar, .side-bar-right::-webkit-scrollbar {
+    display: none;
+}
+
+.side-bar-right {
+    margin-left: 85%;
+}
+
+.side-bar-right ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.side-bar-right li {
+    display: flex;
+    min-height: 20px;
+    margin: 5px;
+}
+
+.content {
+    /* border: solid red; */
+    position: fixed;
+    height: 80%;
+    width: 95%;
+    margin-left: 2%;
+    display: inline-block;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.content textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.component {
+    border: solid blue;
+    background-color: #f2f2f2;
+    margin: 25px 2%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.component-content {
+    padding: 1%;
+    display: inline-block;
+}
+
+.component-content h1 {
+    text-align: center;
+}
+
+.component-content .content-image {
+    margin-right: 2.5%;
+    min-width: 45%;
+    max-width: 45%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* .component-nav {
+    margin: 0;
+    border: solid black;
+} */
+
+.component-nav {
+    margin: 0 1% 0 1%;
+    padding: 0;
+    width: 97%;
+    list-style-type: none;
+    display: table;
+    border-top: solid black;
+    /* border: solid pink; */
+}
+
+.component-nav .comment-input {
+    width: 70%;
+    list-style-type: none;
+}
+
+.component-nav #like {
+    margin-right: 10%;
+    width: 7.5%;
+    height: auto;
+}
+
+.component-content .dateBar {
+    display: flex;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+}

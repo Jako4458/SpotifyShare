@@ -1,0 +1,26 @@
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllers();
+
+// DI 
+builder.Services.AddScoped<IDataRepository, DataRepository>();
+builder.services.AddHttpClient<SpotifyAPIService>();
+builder.services.AddHttpClient<SpotifyTokenManager>();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    Console.WriteLine($".NET Version: {Environment.Version}");
+
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseAuthorization();
+app.MapControllers();
+app.Run();
+

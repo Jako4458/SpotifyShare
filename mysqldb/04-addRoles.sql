@@ -1,0 +1,2 @@
+CREATE ROLE IF NOT EXISTS 'SpotifyAdmin';
+GRANT SELECT, INSERT, UPDATE, DELETE, EXECUTE ON Spotify_service.* TO `SpotifyAdmin`;
