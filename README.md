@@ -36,7 +36,7 @@ cd mysqldb
 
 ### 4) Run with Docker Compose
 ```bash
-docker compose up --build
+docker-compose up --build
 ```
 
 ## Authentication
